@@ -51,6 +51,6 @@ var isJSON = (obj) => {
 console.log(isJSON('{"tuan":"tuan","phu":"phu"}'));
 
 // Exercise 1.5
-// const JSONToFile = (obj, filename) =>
-//   fs.writeFile(`${filename}.json`, JSON.stringify(obj, null, 2));
-// JSONToFile({ test: 'is passed' }, 'exercise1_5');
+const JSONToFile = (obj, filename) =>
+  fs.writeFile(`${filename}.json`, JSON.stringify(obj, null, 2));
+JSONToFile({ test: 'is passed' }, 'exercise1_5');
